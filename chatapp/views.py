@@ -9,8 +9,8 @@ from .models import RoomMember
 from django.views.decorators.csrf import csrf_exempt
 
 def generatetoken(request):
-    appId = '47fff3c860354d08ae23720e8f34a1c6'
-    appCertificate = 'ad92af6e4fd24a5296dec95f39ae4ca1'
+    appId = '<type app id here>'
+    appCertificate = '<type app certificate here>'
     channelName = request.GET.get('channel')
     uid = random.randint(1,230)
     expirationTimeInSeconds = 3600*24
